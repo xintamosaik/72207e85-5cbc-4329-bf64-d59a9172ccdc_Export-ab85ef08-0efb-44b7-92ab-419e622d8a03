@@ -7,5 +7,17 @@
 </head>
 <body>
     <h1>Welcome to the home page</h1>
+    <script>
+        // fetch('http://localhost:3000/api')
+        const url = 'http://localhost:8080/api';
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+            })
+            .catch(error => {
+                console.log(error);
+            });
+    </script>
 </body>
 </html>
